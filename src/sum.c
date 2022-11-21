@@ -33,7 +33,7 @@ int sumThatShitUp(int n, int total){
 int sumtail (int n, int total)
 {
 
-	//Precondition
+	//Preconditions
 	//n skal være større end 0
 	assert(n >= 1);
 	//total skal være lig med 0, da det ellers kan give fejl
