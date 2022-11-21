@@ -14,7 +14,8 @@ extern "C"
 TEST_CASE("sumtail")
 {
     // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check.
-	//Basecase vil være 6 og inductive state vil være 5
+	//Base case vil være 6 og inductive state vil være 5
+	//Hvis disse to states passer vil programmet i følge proof by induction være korrekt lavet
 	REQUIRE(sumtail(6, 0) == 21);
 	REQUIRE(sumtail(5, 0) == 15);
 
@@ -35,8 +36,15 @@ TEST_CASE("sumn")
 
 TEST_CASE("fib")
 {
-   // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+   // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check.
+	/*pre-condition for programmet er at p = 0 og pp = 1, da det er sådan fib nummer starter.
+	Har vist i sumtail hvordan man kan asserte inputs, så det vil ikke blive vist her i.*/
+
+	//Base case vil være 10 og inductive state vil være 9
+	//Hvis disse to states passer vil programmet i følge proof by induction være korrekt lavet
+	REQUIRE(fib(10, 0, 1) == 55);
+	REQUIRE(fib(9, 0, 1) == 34);
+
 }
 
 
