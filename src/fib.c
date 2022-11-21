@@ -10,6 +10,7 @@
 int fib (int n, int p, int pp)
 {
 
+	//Precondition
 	//n skal være større end 0
 	assert(n >= 1);
 

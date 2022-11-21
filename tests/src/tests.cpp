@@ -24,7 +24,9 @@ TEST_CASE("sumtail")
 TEST_CASE("sumwhile")
 {
     // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+	REQUIRE(sumwhile(6) == 21);
+	REQUIRE(sumwhile(5) == 15);
+
 }
 
 TEST_CASE("sumn")

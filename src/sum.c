@@ -17,7 +17,7 @@ int sum (int n)
 
 int sumThatShitUp(int n, int total){
 
-//Tjekker om n == 1
+	//Tjekker om n == 1
 	if(n == 1){
 		//Hvis ja, mangler der kun at total plusses med 1
 		return total + 1;
@@ -33,6 +33,7 @@ int sumThatShitUp(int n, int total){
 int sumtail (int n, int total)
 {
 
+	//Precondition
 	//n skal være større end 0
 	assert(n >= 1);
 	//total skal være lig med 0, da det ellers kan give fejl
@@ -46,6 +47,22 @@ int sumtail (int n, int total)
 /* Sum integers 1 to n */
 int sumwhile (int n)
 {
-  return 0;
+
+	//Precondition
+	assert(n >= 1);
+
+	//variabel til at gemme værdi
+	int res = 0;
+
+	//mens n er større eller lig med 1
+	while(n >= 1){
+		//res plusser sin egen værdi med n
+		res += n;
+		//n minus 1
+		n--;
+	}
+
+	return res;
+
 }
 

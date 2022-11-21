@@ -20,6 +20,7 @@ int sumn (int n)
 
 	int res;
 
+	//Preconditions
 	//Tjekker om n er ulige
 	assert(n % 2 != 0);
 	//Tjekker om n er større end 1
