@@ -13,8 +13,11 @@ extern "C"
 
 TEST_CASE("sumtail")
 {
-    // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check.
+	//Basecase vil være 6 og inductive state vil være 5
+	REQUIRE(sumtail(6, 0) == 21);
+	REQUIRE(sumtail(5, 0) == 15);
+
 }
 
 TEST_CASE("sumwhile")
